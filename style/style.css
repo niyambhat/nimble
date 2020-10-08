@@ -53,6 +53,7 @@ li{
 }
 a{
     text-decoration:none;
+    
 }
 img{
     max-width:100%;
@@ -61,6 +62,7 @@ img{
 }
 .filters .types a, header .navigation a{
     font-size:14px;
+    color:grey;
 }
 
 /*header styling*/
@@ -76,6 +78,7 @@ header .logo{
     margin-right:24px;
     margin-top: 21px;
 }
+
 header nav .navigation{
     float:left;
     margin-top: 26px;
@@ -287,6 +290,33 @@ iframe{
     border-radius: 8px;
 }
 
+.robot {
+    width: 70px;
+    margin-top: 106px;
+    margin-left: 20px;
+}
+
+
+/*animation starts*/
+
+.robot img{   
+    width:100px;
+    height:auto;
+    animation-name:left-to-right;
+    animation-duration: 10s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:40;
+    animation-fill-mode:forwards;
+    animation-delay:1s;
+}
+@keyframes left-to-right{
+  from{
+    transform: translatex(0px);   
+}
+to{
+    transform: translate(1300px); 
+}}
+/*animation ends*/
 
 
 @media (max-width:1919px){
